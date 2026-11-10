@@ -1,0 +1,27 @@
+<div class="card card--wide" data-view="signup" hidden>
+  <h2 class="card__title">Create your account</h2>
+  <p class="card__muted card__muted--small">Fill in your details. The property custodian will approve your access.</p>
+  <form id="form-signup" novalidate>
+    <div class="row">
+      <div class="field"><label for="su-first">First Name:</label><input id="su-first" type="text" placeholder="Ex. John Carl" required><p class="field__error" hidden></p></div>
+      <div class="field"><label for="su-last">Last Name:</label><input id="su-last" type="text" placeholder="Ex. Rodriguez" required><p class="field__error" hidden></p></div>
+    </div>
+    <div class="field"><label for="su-email">Email:</label><input id="su-email" type="email" placeholder="name@school.edu" required><p class="field__error" hidden></p></div>
+    <div class="field">
+      <label for="su-pass">Password:</label>
+      <div class="input-wrap"><input id="su-pass" type="password" placeholder="Create a password" required>
+        <button type="button" class="eye" data-toggle-password aria-label="Show password"><svg><use href="#i-eye"/></svg></button></div>
+      <p class="field__error" hidden></p>
+    </div>
+    <div class="field">
+      <label for="su-confirm">Confirm Password:</label>
+      <div class="input-wrap"><input id="su-confirm" type="password" placeholder="Re-type your password" required>
+        <button type="button" class="eye" data-toggle-password aria-label="Show password"><svg><use href="#i-eye"/></svg></button></div>
+      <p class="field__error" hidden></p>
+    </div>
+    <p class="form-error" data-form-error hidden></p>
+    <button type="submit" class="btn btn--primary">Create account</button>
+  </form>
+  <p class="card__note">We'll email a verification code that expires in 15 minutes.</p>
+  <p class="card__foot">Already have an account? <a href="#login" class="link">Log in</a></p>
+</div>

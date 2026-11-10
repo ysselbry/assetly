@@ -1,0 +1,11 @@
+<div class="card" data-view="verify" hidden>
+  <h2 class="card__title">Check your email</h2>
+  <p class="card__muted card__muted--small">We sent a 6-digit code to <span data-email-target>name@school.edu</span>. Enter it below to verify your account.</p>
+  <div class="otp" data-otp="verify" aria-label="6-digit code"></div>
+  <p class="field__error field__error--center" data-otp-error hidden></p>
+  <p class="timer"><svg><use href="#i-clock"/></svg> Code expires in <b data-expiry>15:00</b></p>
+  <button type="button" class="btn btn--primary" data-otp-submit>Verify email</button>
+  <p class="card__note">Didn't get it? <button type="button" class="link link--btn" data-resend disabled>Resend code in <span data-resend-time>0:30</span></button></p>
+  <div class="divider divider--line"></div>
+  <p class="card__links"><a href="#signup" class="link">Change email</a><i></i><a href="#login" class="link">Back to log in</a></p>
+</div>

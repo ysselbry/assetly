@@ -1,0 +1,25 @@
+<div class="card" data-view="login" hidden>
+  <h2 class="card__title">Welcome back</h2>
+  <p class="card__muted">Please log in your account</p>
+  <form id="form-login" novalidate>
+    <div class="field">
+      <label for="login-email">Email:</label>
+      <input id="login-email" type="email" placeholder="name@school.edu" autocomplete="email" required>
+      <p class="field__error" hidden></p>
+    </div>
+    <div class="field">
+      <label for="login-password">Password:</label>
+      <div class="input-wrap">
+        <input id="login-password" type="password" placeholder="Enter your password" autocomplete="current-password" required>
+        <button type="button" class="eye" data-toggle-password aria-label="Show password"><svg><use href="#i-eye"/></svg></button>
+      </div>
+      <p class="field__error" hidden></p>
+    </div>
+    <a href="forgotPassword.html" class="link link--right">Forgot password</a>
+    <p class="form-error" data-form-error hidden></p>
+    <button type="submit" class="btn btn--primary">Log in</button>
+  </form>
+  <div class="divider"><span>New to Assetly?</span></div>
+  <a href="#signup" class="btn btn--outline">Sign up</a>
+  <p class="card__note">Teacher accounts are verified by the school's property custodian before access is granted.</p>
+</div>

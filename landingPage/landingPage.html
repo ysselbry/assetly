@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Assetly – Log in</title>
+</head>
+<body>
+
+<!-- Icon sprite -->
+<div data-include="partials/icons.html"></div>
+
+<main class="layout layout--split">
+
+  <!-- ================= HERO (left side) ================= -->
+  <div data-include="partials/hero.html"></div>
+
+  <!-- ================= AUTH BOXES (right side) =================
+       One box is visible at a time. js/landingPage.js switches between
+       them using the URL hash (#login, #signup, #verify, #verified).
+       Each box lives in its own file under partials/auth/.
+  ============================================================ -->
+  <section class="panel">
+
+    <!-- Log in box -->
+    <div data-include="partials/auth/login.html"></div>
+
+    <!-- Sign up box -->
+    <div data-include="partials/auth/signup.html"></div>
+
+    <!-- Verify email box (6-digit code) -->
+    <div data-include="partials/auth/verify.html"></div>
+
+    <!-- Email verified box -->
+    <div data-include="partials/auth/verified.html"></div>
+
+  </section>
+</main>
+
+<script src="js/common.js"></script>
+<script src="js/landingPage.js"></script>
+</body>
+</html>
